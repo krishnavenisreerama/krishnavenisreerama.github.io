@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Curriculum Vitae</title> 
+  <style> 
+    .section { 
+      margin-bottom: 20px; 
+    } 
+    .section h2 { 
+      cursor: pointer; 
+    } 
+    .content { 
+      display: none; 
+    } 
+    .content.show { 
+      display: block; 
+    } 
+  </style> 
+</head> 
+<body> 
+  <h1>KRISHNAVENI SREERAMA</h1> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('objective')">Objective</h2> 
+    <div class="content" id="objective"> 
+      <p>Passionate MSc student in Molecular Biology and Biotechnology, with profound enthusiasm and exploring the medical applications of biotechnology. Constantly exploring knowledge in emerging biotech trends and applications. Actively seeking opportunities to learn, grow and contribute my skills and enthusiasm to the biotech industry.</p> 
+    </div> 
+  </div> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('education')">Education</h2> 
+    <div class="content" id="education"> 
+      <p><strong>MSc</strong><br> 
+      University/Board: SRM University<br> 
+      Year of Passing: Pursuing (2023)<br> 
+      Percentage/CGPA: 6.8 (1st semester)</p> 
+      <p><strong>BSc</strong><br> 
+      University/Board: Montessori Mahila Kalasala<br> 
+      Year of Passing: 2020<br> 
+      Percentage/CGPA: 9.2</p> 
+      <p><strong>Intermediate</strong><br> 
+        Collage: Sri Chaintanya Junior Collage<br> 
+        Year of Passing: 2020<br> 
+        Cgpa: 8.8</p> 
+        <p><strongCBSE</strong<br> 
+          School: ST.Ann's School<br> 
+          Year Of Passing: 2018<br> 
+          Percentage: 75%</p> 
+      <!-- Include other education details similarly --> 
+    </div> 
+  </div> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('technical')">Technical Skills</h2> 
+    <div class="content" id="technical"> 
+      <ul> 
+        <li>PCR</li> 
+        <li>Spectroscopy</li> 
+        <li>Handling of Microscope</li> 
+        <li>Gel Electrophoresis</li> 
+        <li>Basics of Python and R</li> 
+        <li>Homology Modelling</li> 
+        <li>Docking</li>
+        <li>C language</li>
+        <li>C++</li>
+        <li>Medical Coding</li> 
+      </ul> 
+    </div> 
+  </div> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('soft')">Soft Skills</h2> 
+    <div class="content" id="soft"> 
+      <ul> 
+        <li>Communication</li> 
+        <li>Critical thinking</li> 
+        <li>Problem solving</li> 
+        <li>Teamwork</li> 
+        <li>Time management</li> 
+      </ul> 
+    </div> 
+  </div> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('extra')">Extra-Curricular Activities and Achievements</h2> 
+    <div class="content" id="extra"> 
+      <ul> 
+        <li>Contributed as a volunteer in an international conference hosted at SRM University.
+      </ul> 
+    </div> 
+  </div> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('certificate')">Certificate Course</h2> 
+    <div class="content" id="certificate"> 
+      <p>completed certification course in Medical Coding,C,C++</p>
+    </div> 
+  </div> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('languages')">Languages Known</h2> 
+    <div class="content" id="languages"> 
+      <ul> 
+        <li>English</li> 
+        <li>Hindi</li> 
+        <li>Telugu</li> 
+      </ul> 
+    </div> 
+  </div> 
+  <div class="section"> 
+    <h2 onclick="toggleContent('declaration')">Declaration</h2> 
+    <div class="content" id="declaration"> 
+      <p>I hereby declare that all the details mentioned above are true to the best of my knowledge and I will be responsible for any deviation from it.</p> 
+    </div> 
+  </div> 
+  <script> 
+    function toggleContent(id) { 
+      var content = document.getElementById(id); 
+      content.classList.toggle('show'); 
+    } 
+  </script> 
+</body> 
+</html>
